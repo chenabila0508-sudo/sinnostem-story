@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sinnostem: TOI 700 Story & Rules</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ff4c4c;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #330000;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px #550000;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  .story-section {
+    background-color: #1a0000;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px #ff0000;
+  }
+  h2 {
+    color: #ff4c4c;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #550000;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  .btn {
+    background-color: #ff0000;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .btn:hover {
+    background-color: #ff4c4c;
+    box-shadow: 0 0 10px #ff0000;
+  }
+  .jump-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .jump-btn:hover {
+    background-color: #ff4c4c;
+    box-shadow: 0 0 10px #ff0000;
+  }
+</style>
+</head>
+<body>
+
+<header>Sinnostem: TOI 700 – The Replica Earth</header>
+
+<!-- Button to jump to rules -->
+<button class="jump-btn" onclick="document.getElementById('rules').scrollIntoView({behavior:'smooth'})">
+  Jump to Rules
+</button>
+
+<div class="container">
+
+  <div class="story-section">
+    <h2>Introduction</h2>
+    <p>Long ago, the world began to crumble under corruption and chaos. Hidden in the cosmos lies TOI 700, a mirror of Earth, where knowledge to restore balance is preserved.</p>
+    <p>Three brilliant scientists embark on a perilous journey. Each holds a piece of the truth, but the path is treacherous. Ancient rocks, the Batu Bersurat, guard secrets—but the knowledge you hold is not your own.</p>
+    <p>Only through reasoning, discussion, and strategy can the mysteries of TOI 700 be unlocked. Do you have the courage to save TOI 700, or will pride and ego doom both worlds?</p>
+  </div>
+
+  <div class="story-section">
+    <h2>Level 1 – The Outer Cave</h2>
+    <p>You step into the outer chamber. The cave walls glimmer faintly, revealing inscriptions long forgotten. The air is cool but charged, as if the stones themselves are alive.</p>
+    <p>Three ancient rocks lie in your path, each etched with knowledge—but none belongs to you. This is your first trial. Simple at first glance, but even the smallest misstep can slow your journey.</p>
+  </div>
+
+  <div class="story-section">
+    <h2>Level 2 – The Fractured Chamber</h2>
+    <p>Deeper now, the cave narrows. Shadows twist across the walls, and the echo of dripping water fills the air. Here, the stones are sharper, their riddles more cunning.</p>
+    <p>The inscriptions demand collaboration—you cannot rely on your specialty alone. Pride may whisper that you can do it yourself, but TOI 700 watches, and every moment wasted risks leaving it in peril.</p>
+  </div>
+
+  <div class="story-section">
+    <h2>Level 3 – The Core Chamber</h2>
+    <p>You have reached the heart of the cave. Darkness presses around you, broken only by the glow of the three final stones.</p>
+    <p>Their inscriptions are intricate, intertwining knowledge from all fields, a puzzle no single mind can conquer. Ego and ambition are tested more than intellect.</p>
+  </div>
+
+  <div class="story-section">
+    <h2>Endgame</h2>
+    <p>Level 3 challenges produce three numeric outputs. Combine them to form a 3-digit code to unlock the Final Chamber.</p>
+    <p>If World Stability is sufficient → TOI 700 is saved. Scientist with highest Fame → wins glory. If Stability is too low → TOI 700 collapses, and all lose.</p>
+  </div>
+
+  <div class="story-section" id="rules">
+    <h2>Game Rules</h2>
+    <p>1. There are 4 players: 3 scientists and 1 Storyteller/Guide.</p>
+    <p>2. Each scientist picks a card (Batu Bersurat) containing equations or discoveries.</p>
+    <p>3. Players must solve the puzzles to advance through Levels 1 → 2 → 3.</p>
+    <p>4. Level difficulty increases: Level 1 (Easy), Level 2 (Medium), Level 3 (Hard).</p>
+    <p>5. Communication and collaboration are key — each player has their own specialty.</p>
+    <p>6. Endgame: combine your solutions to unlock the final chamber. Victory depends on World Stability and Fame points.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
