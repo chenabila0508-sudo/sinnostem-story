@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinnostem: TOI 700 Story</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0b0c10;
+      color: #c5c6c7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1f2833;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #66fcf1;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .level {
+      display: none;
+      margin-bottom: 40px;
+    }
+    .level.active {
+      display: block;
+    }
+    .level h2 {
+      color: #45a29e;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+    .narration {
+      background: #1f2833;
+      padding: 15px;
+      border-left: 5px solid #66fcf1;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      white-space: pre-line;
+    }
+    .btn {
+      background: #45a29e;
+      color: #0b0c10;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #66fcf1;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #66fcf1;
+      background: #1f2833;
+    }
+  </style>
+</head>
+<body>
+  <header>Sinnostem: TOI 700 – The Replica Earth</header>
+
+  <div class="container">
+
+    <div id="level0" class="level active">
+      <h2>Introduction</h2>
+      <div class="narration">
+Long ago, the world began to crumble under corruption and chaos. Hidden in the cosmos lies TOI 700, a mirror of Earth, where knowledge to restore balance is preserved.
+
+Three brilliant scientists embark on a perilous journey. Each holds a piece of the truth, but the path is treacherous. Ancient rocks, the Batu Bersurat, guard secrets—but the knowledge you hold is not your own.
+
+Only through reasoning, discussion, and strategy can the mysteries of TOI 700 be unlocked.
+
+Do you have the courage to save TOI 700, or will pride and ego doom both worlds?
+      </div>
+      <button class="btn" onclick="nextLevel(1)">Begin Level 1</button>
+    </div>
+
+    <div id="level1" class="level">
+      <h2>Level 1 – The Outer Cave</h2>
+      <div class="narration">
+You step into the outer chamber. The cave walls glimmer faintly, revealing inscriptions long forgotten. The air is cool but charged, as if the stones themselves are alive.
+
+Three ancient rocks lie in your path, each etched with knowledge—but none belongs to you. This is your first trial. Simple at first glance, but even the smallest misstep can slow your journey.
+
+Remember, what you solve here is only the first step toward saving TOI 700, the fragile mirror of our world.
+      </div>
+      <button class="btn" onclick="nextLevel(2)">Proceed to Level 2</button>
+    </div>
+
+    <div id="level2" class="level">
+      <h2>Level 2 – The Fractured Chamber</h2>
+      <div class="narration">
+Deeper now, the cave narrows. Shadows twist across the walls, and the echo of dripping water fills the air. Here, the stones are sharper, their riddles more cunning.
+
+The inscriptions demand collaboration—you cannot rely on your specialty alone. Pride may whisper that you can do it yourself, but TOI 700 watches, and every moment wasted risks leaving it in peril.
+
+Solve wisely; the replica Earth grows restless.
+      </div>
+      <button class="btn" onclick="nextLevel(3)">Proceed to Level 3</button>
+    </div>
+
+    <div id="level3" class="level">
+      <h2>Level 3 – The Core Chamber</h2>
+      <div class="narration">
+You have reached the heart of the cave. Darkness presses around you, broken only by the glow of the three final stones.
+
+Their inscriptions are intricate, intertwining knowledge from all fields, a puzzle no single mind can conquer. Ego and ambition are tested more than intellect.
+
+One wrong choice, one refusal to cooperate, and TOI 700 may remain forever beyond salvation. Step carefully. Speak wisely. The fate of two worlds rests in your hands.
+      </div>
+      <button class="btn" onclick="endGame()">Reveal Endgame</button>
+    </div>
+
+    <div id="endgame" class="level">
+      <h2>Endgame</h2>
+      <div class="narration">
+Level 3 challenges produce three numeric outputs. Combine them to form a 3-digit code to unlock the Final Chamber.
+
+If World Stability is sufficient → TOI 700 is saved. Scientist with highest Fame → wins glory. If Stability is too low → TOI 700 collapses, and all lose.
+
+Will you save TOI 700, or will ambition doom it forever?
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Scan QR to revisit the story anytime.</footer>
+
+  <script>
+    function nextLevel(level) {
+      for (let i = 0; i <= 3; i++) {
+        document.getElementById('level' + i).classList.remove('active');
+      }
+      document.getElementById('level' + level).classList.add('active');
+      window.scrollTo(0,0);
+    }
+
+    function endGame() {
+      for (let i = 0; i <= 3; i++) {
+        document.getElementById('level' + i).classList.remove('active');
+      }
+      document.getElementById('endgame').classList.add('active');
+      window.scrollTo(0,0);
+    }
+  </script>
+</body>
+</html>
